@@ -20,28 +20,33 @@
 </head>
 
 <body>
+  <!-- header section start  -->
   <header>
     <h1 class="title">Welcome to <span style="color:rgb(153, 50, 204) ;">Myntra</span> mart</h1>
   </header>
+  <!-- main section start  -->
   <main class="main">
-
+    <!-- search field and search box  -->
     <div class="search-field">
       <div class="search-box">
         <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
+        <button type="button" class=" search-button" data-toggle="button" aria-pressed="false" autocomplete="off"
+          id="search-btn" onclick="loadProducts()">
           Search
         </button>
       </div>
     </div>
+    <!-- card for all products  -->
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products">
 
         </div>
       </div>
+      <!-- product show detail  -->
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
         <div id='show-details-card' class=''></div>
+        <!-- order cart ,total,tax,delivery part  -->
         <div class="cart" id="my-cart" style="background-color:#F0FFFF
         ">
           <table class="table">
@@ -86,6 +91,7 @@
               </tr>
             </tbody>
           </table>
+          <!-- buy now button  -->
           <div class="parces text-center">
             <button onclick="placeOrder()" class="btn btn-primary text-center" style="background-color:black;"><i
                 class="fa fa-shopping-cart"> </i> Buy
